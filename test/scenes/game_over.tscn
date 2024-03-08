@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://dm37wjsldn7at"]
+
+[ext_resource type="Script" path="res://scenes/game_over.gd" id="1_l1xcf"]
+[ext_resource type="Texture2D" uid="uid://bch28jmidcsvp" path="res://assets/restart.png" id="2_6xjp2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qecdl"]
+texture = ExtResource("2_6xjp2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pdq6i"]
+texture = ExtResource("2_6xjp2")
+modulate_color = Color(0.643137, 0.662745, 0.67451, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ghhye"]
+texture = ExtResource("2_6xjp2")
+modulate_color = Color(0.882353, 0.87451, 0.984314, 1)
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_l1xcf")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 438.0
+offset_top = 245.0
+offset_right = 682.0
+offset_bottom = 346.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_qecdl")
+theme_override_styles/hover = SubResource("StyleBoxTexture_pdq6i")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ghhye")
