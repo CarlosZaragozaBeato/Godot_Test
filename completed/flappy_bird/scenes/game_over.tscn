@@ -18,10 +18,12 @@ modulate_color = Color(0.882353, 0.87451, 0.984314, 1)
 script = ExtResource("1_l1xcf")
 
 [node name="Button" type="Button" parent="."]
-offset_left = 438.0
-offset_top = 245.0
-offset_right = 682.0
-offset_bottom = 346.0
+offset_left = 317.0
+offset_top = 327.0
+offset_right = 561.0
+offset_bottom = 428.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_qecdl")
 theme_override_styles/hover = SubResource("StyleBoxTexture_pdq6i")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_ghhye")
+
+[connection signal="pressed" from="Button" to="." method="_on_restart_button_pressed"]
